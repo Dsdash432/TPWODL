@@ -1712,7 +1712,7 @@ function applyFeederLossUploadedData(rows, filename, skipSave){
   currentCircleFilter = topCircleFilter;
   renderTopCircleFilters();
   renderMatrix();
-  renderCircleTableAndBars();
+  refreshCircleTableAndBars();
   currentTrendCircle = (topCircleFilter !== 'All' && trendDataMap[topCircleFilter]) ? topCircleFilter : 'All';
   renderTrendPanel();
   renderTopFromData();
@@ -1783,7 +1783,7 @@ function applyUploadedData(parsed, filename, skipSave){
   renderTopCircleFilters();
   renderMatrix();
     renderTopFromData();
-  renderCircleTableAndBars();
+  refreshCircleTableAndBars();
   renderTrendPanel();
 
   if(!skipSave){
